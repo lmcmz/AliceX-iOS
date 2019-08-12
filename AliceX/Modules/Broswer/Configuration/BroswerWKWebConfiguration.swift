@@ -8,6 +8,7 @@
 
 import Foundation
 import web3swift
+import WebKit
 
 extension WKWebViewConfiguration {
     static func make(forServer server: Web3NetEnum, address: String, in messageHandler: WKScriptMessageHandler) -> WKWebViewConfiguration {

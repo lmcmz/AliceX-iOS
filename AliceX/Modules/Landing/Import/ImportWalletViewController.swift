@@ -32,8 +32,8 @@ class ImportWalletViewController: BaseViewController {
 
         do {
             try WalletManager.importAccount(mnemonics: mnemonics!, completion: { () -> Void in
-                let vc = RNModule.makeViewController(module: .alice)
-                self.navigationController?.pushViewController(vc, animated: true)
+//                let vc = RNModule.makeViewController(module: .alice)
+//                self.navigationController?.pushViewController(vc, animated: true)
             })
         } catch let error as WalletError {
             HUDManager.shared.showError(text: error.errorDescription)

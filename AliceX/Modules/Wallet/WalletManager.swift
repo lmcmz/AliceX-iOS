@@ -140,7 +140,7 @@ class WalletManager {
 //        guard let completion = completion else { return }
 
         HUDManager.shared.showSuccess(text: "Replace wallet success")
-        CallRNModule.sendWalletChangedEvent(address: address)
+//        CallRNModule.sendWalletChangedEvent(address: address)
     }
 
     // MARK: - Notification
@@ -158,7 +158,7 @@ class WalletManager {
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
 
-            CallRNModule.sendNetworkChangedEvent(network: type)
+//            CallRNModule.sendNetworkChangedEvent(network: type)
         } catch let error as WalletError {
             HUDManager.shared.showError(text: error.errorDescription)
         } catch {

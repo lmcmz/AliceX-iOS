@@ -6,13 +6,10 @@
 //  Copyright © 2019 lmcmz. All rights reserved.
 //
 
-import CodePush
 import IQKeyboardManagerSwift
-import React
 import UIKit
 
 private var navi: UINavigationController?
-private var bridge: RCTBridge?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,15 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PriceHelper.shared.fetchFromCache()
 //        GasPriceHelper.shared.getGasPrice()
 
-        func sourceURL(bridge _: RCTBridge?) -> URL? {
-            #if DEBUG
-                return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
-            #else
-                return CodePush.bundleURL()
-            #endif
-        }
-
-        bridge = RCTBridge(bundleURL: sourceURL(bridge: bridge), moduleProvider: nil, launchOptions: nil)
+//        func sourceURL(bridge _: RCTBridge?) -> URL? {
+//            #if DEBUG
+//                return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+//            #else
+//                return CodePush.bundleURL()
+//            #endif
+//        }
+//
+//        bridge = RCTBridge(bundleURL: sourceURL(bridge: bridge), moduleProvider: nil, launchOptions: nil)
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.clear
@@ -44,8 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var vc = UIViewController()
 
         if WalletManager.hasWallet() {
-//            vc = QRCodeReaderViewController()
-            vc = RNModule.makeViewController(module: .alice)
+            vc = QRCodeReaderViewController()
+//            vc = RNModule.makeViewController(module: .alice)
         } else {
             vc = LandingViewController()
         }
@@ -75,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_: UIApplication) {}
 
-    class func rnBridge() -> RCTBridge {
-        return bridge!
-    }
+//    class func rnBridge() -> RCTBridge {
+//        return bridge!
+//    }
 }

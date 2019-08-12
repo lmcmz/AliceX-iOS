@@ -101,9 +101,9 @@ class RNCustomPopUp: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layoutIfNeeded()
-        let rnView = RNModule.makeView(module: .embeddedView)
-        rnView!.frame = RNContainer.bounds
-        RNContainer.addSubview(rnView!)
+//        let rnView = RNModule.makeView(module: .embeddedView)
+//        rnView!.frame = RNContainer.bounds
+//        RNContainer.addSubview(rnView!)
     }
 
     @objc func timeUpdate() {
