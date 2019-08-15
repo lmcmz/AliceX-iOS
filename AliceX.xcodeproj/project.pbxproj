@@ -53,6 +53,15 @@
 		15477B4522E161A0008E3230 /* GasFeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15477B4322E161A0008E3230 /* GasFeeViewController.xib */; };
 		15477B4722E184AA008E3230 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15477B4622E184AA008E3230 /* BigInt.swift */; };
 		15477B4922E1AE18008E3230 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15477B4822E1AE18008E3230 /* API.swift */; };
+		154E7EED2305695700D571A8 /* OpenSea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7EEC2305695700D571A8 /* OpenSea.swift */; };
+		154E7EF123056E7600D571A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7EEF23056E7600D571A8 /* MainViewController.swift */; };
+		154E7EF223056E7600D571A8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154E7EF023056E7600D571A8 /* MainViewController.xib */; };
+		154E7EF423056FD600D571A8 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7EF323056FD600D571A8 /* MainTab.swift */; };
+		154E7EF823057F6600D571A8 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7EF623057F6600D571A8 /* AssetViewController.swift */; };
+		154E7EF923057F6600D571A8 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154E7EF723057F6600D571A8 /* AssetViewController.xib */; };
+		154E7EFD230581B300D571A8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7EFB230581B300D571A8 /* ProfileViewController.swift */; };
+		154E7EFE230581B300D571A8 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154E7EFC230581B300D571A8 /* ProfileViewController.xib */; };
+		154E7F052305A50700D571A8 /* Websocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154E7F042305A50700D571A8 /* Websocket.swift */; };
 		156548E722CDB6B4005C8B2D /* NativeVCModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156548E622CDB6B4005C8B2D /* NativeVCModule.swift */; };
 		156548EA22CDBD6E005C8B2D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156548E922CDBD6E005C8B2D /* String.swift */; };
 		156548ED22CDC27E005C8B2D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156548EC22CDC27E005C8B2D /* BaseNavigationController.swift */; };
@@ -196,6 +205,15 @@
 		15477B4322E161A0008E3230 /* GasFeeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GasFeeViewController.xib; sourceTree = "<group>"; };
 		15477B4622E184AA008E3230 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		15477B4822E1AE18008E3230 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		154E7EEC2305695700D571A8 /* OpenSea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSea.swift; sourceTree = "<group>"; };
+		154E7EEF23056E7600D571A8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		154E7EF023056E7600D571A8 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		154E7EF323056FD600D571A8 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		154E7EF623057F6600D571A8 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		154E7EF723057F6600D571A8 /* AssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+		154E7EFB230581B300D571A8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		154E7EFC230581B300D571A8 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		154E7F042305A50700D571A8 /* Websocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Websocket.swift; path = AliceX/Modules/MainTab/Websocket.swift; sourceTree = SOURCE_ROOT; };
 		156548E622CDB6B4005C8B2D /* NativeVCModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeVCModule.swift; sourceTree = "<group>"; };
 		156548E922CDBD6E005C8B2D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		156548EC22CDC27E005C8B2D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -433,6 +451,42 @@
 			path = EthGasStation;
 			sourceTree = "<group>";
 		};
+		154E7EEB2305693B00D571A8 /* OpenSea */ = {
+			isa = PBXGroup;
+			children = (
+				154E7EEC2305695700D571A8 /* OpenSea.swift */,
+			);
+			path = OpenSea;
+			sourceTree = "<group>";
+		};
+		154E7EEE23056C1600D571A8 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				154E7EEF23056E7600D571A8 /* MainViewController.swift */,
+				154E7EF023056E7600D571A8 /* MainViewController.xib */,
+				154E7EF323056FD600D571A8 /* MainTab.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		154E7EF523057F4700D571A8 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				154E7EF623057F6600D571A8 /* AssetViewController.swift */,
+				154E7EF723057F6600D571A8 /* AssetViewController.xib */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		154E7EFA23057F6F00D571A8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				154E7EFB230581B300D571A8 /* ProfileViewController.swift */,
+				154E7EFC230581B300D571A8 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		156548EE22CDC30F005C8B2D /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +657,7 @@
 		1587396722BA0EB900F36F92 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				154E7EEB2305693B00D571A8 /* OpenSea */,
 				15477B3B22E15B09008E3230 /* EthGasStation */,
 				15AF403D22E05A3C0059FB18 /* CoinMarketCap */,
 				15AF403C22E05A170059FB18 /* Ethplorer */,
@@ -615,6 +670,7 @@
 		1587396822BA0ECF00F36F92 /* WebSocket */ = {
 			isa = PBXGroup;
 			children = (
+				154E7F042305A50700D571A8 /* Websocket.swift */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -809,6 +865,9 @@
 		15B86BB422AA1DAF00110C06 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				154E7EFA23057F6F00D571A8 /* Profile */,
+				154E7EF523057F4700D571A8 /* Asset */,
+				154E7EEE23056C1600D571A8 /* MainTab */,
 				15CB1F2A22F16C4900E3075C /* WalletConnect */,
 				152151EC22ECB7A300A4613A /* QRcode */,
 				1526B61F22E894CF007663E5 /* Hide */,
@@ -1085,6 +1144,7 @@
 			files = (
 				15B86B6322AA044000110C06 /* LaunchScreen.storyboard in Resources */,
 				1572598922E0B516004D0CC4 /* CurrencyViewController.xib in Resources */,
+				154E7EF923057F6600D571A8 /* AssetViewController.xib in Resources */,
 				156BCD6022C4A41B00B380DF /* SignMessagePopUp.xib in Resources */,
 				15BFA5A022DEF594006BB60D /* Assets.xcassets in Resources */,
 				15BC4DB922DAD03700313CA9 /* DAppListViewController.xib in Resources */,
@@ -1098,7 +1158,9 @@
 				157AA67F22CCAA6E008AF3A5 /* MnemonicsView.xib in Resources */,
 				15DE8E3C22C9DD45004B45A2 /* ImportWalletViewController.xib in Resources */,
 				1581EC1D22D8685E00B74F30 /* web3-min.js in Resources */,
+				154E7EF223056E7600D571A8 /* MainViewController.xib in Resources */,
 				1587395922B9E16A00F36F92 /* PaymentPopUp.xib in Resources */,
+				154E7EFE230581B300D571A8 /* ProfileViewController.xib in Resources */,
 				157AA56C22CC6CE0008AF3A5 /* SettingViewController.xib in Resources */,
 				153A654922C9CE2B0035EB2C /* LandingViewController.xib in Resources */,
 				15BC4DBE22DAD82E00313CA9 /* DappTableViewCell.xib in Resources */,
@@ -1138,7 +1200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftformat >/dev/null; then\n#swiftformat .\necho \"Disable format\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 		1587395F22B9F9FB00F36F92 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1333,6 +1395,7 @@
 				15477B4922E1AE18008E3230 /* API.swift in Sources */,
 				1581EC1F22D86A9B00B74F30 /* ScriptMessageProxy.swift in Sources */,
 				152151E722ECB76200A4613A /* LBXScanViewController.swift in Sources */,
+				154E7EF123056E7600D571A8 /* MainViewController.swift in Sources */,
 				152151EB22ECB76200A4613A /* LBXScanWrapper.swift in Sources */,
 				1587396A22BB48FD00F36F92 /* BaseControl.swift in Sources */,
 				1535C2CE22F1643500C62FDC /* BaseAlertView.swift in Sources */,
@@ -1344,6 +1407,7 @@
 				1527872922ADF6F800D63C7F /* WalletError.swift in Sources */,
 				156548E722CDB6B4005C8B2D /* NativeVCModule.swift in Sources */,
 				157AA56E22CC8959008AF3A5 /* WalletManager+Network.swift in Sources */,
+				154E7EF423056FD600D571A8 /* MainTab.swift in Sources */,
 				15BC4DC622DAFAE800313CA9 /* UIImage.swift in Sources */,
 				15E2876622DEC58E00637135 /* BroswerVC+WKDelegate.swift in Sources */,
 				15DE8E3B22C9DD45004B45A2 /* ImportWalletViewController.swift in Sources */,
@@ -1370,6 +1434,8 @@
 				1527872C22AE080C00D63C7F /* KaychainHelper.swift in Sources */,
 				152151EF22ECB7CC00A4613A /* QRCodeReaderViewController.swift in Sources */,
 				158B375722AF5C8B005FECAB /* WalletModule.swift in Sources */,
+				154E7EED2305695700D571A8 /* OpenSea.swift in Sources */,
+				154E7EFD230581B300D571A8 /* ProfileViewController.swift in Sources */,
 				1581EC2622D8AE6D00B74F30 /* Double.swift in Sources */,
 				15764E1222E9E12900784848 /* TransferPopUp.swift in Sources */,
 				152151E522ECB76200A4613A /* LBXScanNetAnimation.swift in Sources */,
@@ -1379,6 +1445,7 @@
 				15BC4DB422DA495000313CA9 /* BaseView.swift in Sources */,
 				15477B3D22E15B4C008E3230 /* Moya+Util.swift in Sources */,
 				15E845EA22DBA141008F8AD2 /* NSObject+hkvc.m in Sources */,
+				154E7EF823057F6600D571A8 /* AssetViewController.swift in Sources */,
 				153A654822C9CE2B0035EB2C /* LandingViewController.swift in Sources */,
 				15E845E622DBA141008F8AD2 /* HKTransitionPush.m in Sources */,
 				1527873C22AE21B200D63C7F /* UIApplication.swift in Sources */,
@@ -1403,6 +1470,7 @@
 				1587395E22B9EAB300F36F92 /* EthplorerModel.swift in Sources */,
 				15477B4422E161A0008E3230 /* GasFeeViewController.swift in Sources */,
 				15E845E722DBA141008F8AD2 /* HKTransitionPop.m in Sources */,
+				154E7F052305A50700D571A8 /* Websocket.swift in Sources */,
 				157A676A22CDE12E00DA83AB /* SignYesViewController.swift in Sources */,
 				15F985E622C34E1400942357 /* ContractPopUp.swift in Sources */,
 				15BC4DC422DAF58100313CA9 /* DAppModel.swift in Sources */,

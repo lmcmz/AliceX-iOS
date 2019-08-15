@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Method: String, Decodable {
+enum BrowserMethod: String, Decodable {
     // case getAccounts
     case sendTransaction
     case signTransaction
@@ -18,7 +18,7 @@ enum Method: String, Decodable {
     case unknown
 
     init(string: String) {
-        self = Method(rawValue: string) ?? .unknown
+        self = BrowserMethod(rawValue: string) ?? .unknown
     }
 }
 

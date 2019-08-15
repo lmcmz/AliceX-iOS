@@ -91,10 +91,10 @@ extension WKWebViewConfiguration {
             """
 
         let userScript = WKUserScript(source: js, injectionTime: .atDocumentStart, forMainFrameOnly: false)
-        webViewConfig.userContentController.add(messageHandler, name: Method.signTransaction.rawValue)
-        webViewConfig.userContentController.add(messageHandler, name: Method.signPersonalMessage.rawValue)
-        webViewConfig.userContentController.add(messageHandler, name: Method.signMessage.rawValue)
-        webViewConfig.userContentController.add(messageHandler, name: Method.signTypedMessage.rawValue)
+        webViewConfig.userContentController.add(messageHandler, name: BrowserMethod.signTransaction.rawValue)
+        webViewConfig.userContentController.add(messageHandler, name: BrowserMethod.signPersonalMessage.rawValue)
+        webViewConfig.userContentController.add(messageHandler, name: BrowserMethod.signMessage.rawValue)
+        webViewConfig.userContentController.add(messageHandler, name: BrowserMethod.signTypedMessage.rawValue)
         webViewConfig.userContentController.addUserScript(userScript)
         return webViewConfig
     }

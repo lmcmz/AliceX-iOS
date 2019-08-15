@@ -41,11 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.clear
 
+        Websocket.shared.changeNetwork()
+        
         var vc = UIViewController()
 
         if WalletManager.hasWallet() {
+            vc = MainViewController()
 //            vc = QRCodeReaderViewController()
-            vc = RNModule.makeViewController(module: .alice)
+//            vc = RNModule.makeViewController(module: .alice)
         } else {
             vc = LandingViewController()
         }

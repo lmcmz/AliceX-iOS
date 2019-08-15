@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="AliceX" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="vWv-gv-i5c" id="r3E-87-yih"/>
+                <outlet property="scrollView" destination="H6C-l3-5qB" id="2Dd-eh-bHY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6C-l3-5qB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWv-gv-i5c">
+                            <rect key="frame" x="0.0" y="0.0" width="1242" height="852"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vWv-gv-i5c" secondAttribute="bottom" id="8VP-XH-lAH"/>
+                        <constraint firstItem="vWv-gv-i5c" firstAttribute="width" secondItem="H6C-l3-5qB" secondAttribute="width" multiplier="3" id="Cf0-H0-uvM"/>
+                        <constraint firstItem="vWv-gv-i5c" firstAttribute="centerY" secondItem="H6C-l3-5qB" secondAttribute="centerY" id="Puu-BY-ngR"/>
+                        <constraint firstAttribute="trailing" secondItem="vWv-gv-i5c" secondAttribute="trailing" id="VFf-rF-xC4"/>
+                        <constraint firstItem="vWv-gv-i5c" firstAttribute="top" secondItem="H6C-l3-5qB" secondAttribute="top" id="bS2-2i-QFo"/>
+                        <constraint firstItem="vWv-gv-i5c" firstAttribute="leading" secondItem="H6C-l3-5qB" secondAttribute="leading" id="y73-GD-y0c"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="lWE-6M-bsS"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H6C-l3-5qB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GoM-7i-sVi"/>
+                <constraint firstAttribute="trailing" secondItem="H6C-l3-5qB" secondAttribute="trailing" id="PsN-EJ-26n"/>
+                <constraint firstItem="H6C-l3-5qB" firstAttribute="top" secondItem="sK4-7h-uLx" secondAttribute="top" id="Uhe-op-wRV"/>
+                <constraint firstAttribute="bottom" secondItem="H6C-l3-5qB" secondAttribute="bottom" id="Vt6-Vg-3RB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="sK4-7h-uLx"/>
+        </view>
+    </objects>
+</document>
